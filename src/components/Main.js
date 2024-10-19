@@ -1,7 +1,9 @@
 const Main = () => {
     return (
         <>
-        Main
+            <section>Specials</section>
+            <section>Testimonials</section>
+            <section>About</section>
         </>
     )
 }

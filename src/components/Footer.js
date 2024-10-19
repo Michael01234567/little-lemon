@@ -1,7 +1,9 @@
 const Footer = () => {
     return (
         <>
-        Footer
+            <fieldset>Doormat Navigation</fieldset>
+            <fieldset>Contacts</fieldset>
+            <fieldset>Social Media Links</fieldset>
         </>
     )
 }
