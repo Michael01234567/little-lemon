@@ -1,5 +1,4 @@
 import bannerImg from '../assets/restauranfood.jpg'
-import { Link } from 'react-router-dom'
 
 
 const Header = () => {
@@ -10,7 +9,7 @@ const Header = () => {
                     <h2>Little Lemon</h2>
                     <h3>Chicago</h3>
                     <p>We are a family owned Mediteranean restaurant, focused on traditional recipes on trditional served with a modern twist.</p>
-                    <Link to="/booking"><button aria-label="On Click">Reserve Table</button></Link>
+                    <button aria-label="On Click">Reserve Table</button>
                 </div>
                 <div className='banner-img'>
                     <img src={bannerImg} alt='bannerImg'/>

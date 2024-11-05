@@ -1,8 +1,8 @@
 
 
-import React, { useState } from 'react'
+import React, { useState} from 'react'
 
-const BookingForm = (props) => {
+const BookingForm = ({availableTimes, SubmitForm, dispatch}) => {
     const [date, setDate] = useState("");
     const [times, setTimes] = useState("");
     const [guests, setGuests] = useState("");
@@ -10,12 +10,12 @@ const BookingForm = (props) => {
 
     const handleSubmit = (e) => {
         e.preventDefault();
-        props.SubmitForm(e);
+        SubmitForm(e.target.value);
     }
 
     const handlerChange = (e) => {
         setDate(e);
-        props.dispatch(e);
+        dispatch(e.target.value);
     }
 
   return (
@@ -32,7 +32,7 @@ const BookingForm = (props) => {
                         <select id='book-time' value={times} onChange={(e) => setTimes(e.target.value)} required>
                             <option value="">Select a Time</option>
                             {
-                                props.availableTimes.availableTimes.map(availableTimes => {
+                                availableTimes.availableTimes.map(availableTimes => {
                                     return <option key={availableTimes}>{availableTimes}</option>;
                                 })
                             }

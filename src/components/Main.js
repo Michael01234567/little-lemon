@@ -41,6 +41,7 @@ const Main = () => {
 
     const [state, dispatch] = useReducer(updateTimes, initialState)
 
+
     const navigate = useNavigate();
 
     const submitForm = (formData) => {
