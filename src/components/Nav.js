@@ -1,4 +1,4 @@
-import logo from '../assets/Logo.png'
+import logo from './assets/Logo .svg'
 import { useState } from 'react'
 
 const Nav = () => {
